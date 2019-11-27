@@ -138,6 +138,11 @@ export default class App extends React.Component {
     RNRestart.Restart(); // Restart the game
   }
 
+  componentWillUnmount(){
+    let riddle = {}
+    this.state = {riddle};
+  }
+
   render() {
     return (
       <View style={{flex: 1}}>
